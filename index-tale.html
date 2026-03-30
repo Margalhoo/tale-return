@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>EnderTale</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: white;
+            text-align: center;
+            position: relative;
+
+            min-height: 100vh;
+            overflow-x: hidden;
+
+            background-color: #333333;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 40px 20px;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background-image: url("background.png");
+            background-repeat: repeat;
+            background-size: 300px;
+            opacity: 0.08;
+            z-index: 0;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 600px;
+            width: 100%;
+            padding: 50px 40px;
+            background-color: #1e252f;
+            backdrop-filter: blur(12px);
+            border-radius: 20px;
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+        }
+
+        .logo {
+            width: 220px;
+            margin-bottom: 30px;
+        }
+
+        .description {
+            font-size: 1.05rem;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            color: #cbd5e1;
+        }
+
+        .timer {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 30px;
+            color: #60a5fa;
+        }
+
+        .discord-btn {
+            display: inline-block;
+            padding: 14px 28px;
+            font-weight: 600;
+            font-size: 1rem;
+            color: white;
+            background: #5865F2;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .discord-btn:hover {
+            background: #4752c4;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(88, 101, 242, 0.4);
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 0.8rem;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="endertale-logo.png" alt="EnderTale Logo" class="logo">
+
+    <div class="description">
+        <p>Há quatro anos, o EnderTale foi encerrado com a promessa de que retornaria. Hoje, estamos aqui para cumprir essa promessa com você.</p>
+        <br>
+        <p>
+            Temos orgulho em dizer que o EnderTale agora está sob nova liderança. Contamos com uma nova equipe de Diretores, Administradores e Operadores trabalhando duro para reconstruir a rede.
+        </p>
+        <br>
+        <p>
+            Nosso objetivo é simples: trazer de volta o que tornou o EnderTale especial, enquanto construímos um futuro guiado pela comunidade.
+            Espere atualizações frequentes, comunicação aberta, enquetes e relatórios claros de progresso.
+        </p>
+        <br>
+        <p>~ Nova Equipe EnderTale em 27 de Março de 2026 ~</p>
+    </div>
+
+    <a href="https://go.endertale.com/discord" target="_blank" class="discord-btn">
+        Entrar no Discord
+    </a>
+
+    <div class="footer">
+        © 2026 EnderTale
+    </div>
+</div>
+
+</body>
+</html>
